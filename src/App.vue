@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header></Header>
+        <Header></Header>
     <p class="catchcopy">機械ではできない仕事を</p>
       <div class="news flex">
         <div class="news-content">
@@ -11,7 +11,6 @@
         </div>
         <div class="news-icon">news</div>
       </div>
-    </div>
       <div class="mission">
         <div class="mission-content">
           <h2 class="mission_title">
@@ -86,7 +85,9 @@
         <a href="" class="common-btn contact-btn">お問い合わせへ</a>
       </div>
   <Footer></Footer>
+</div>
 </template>
+
 
 <script>
 import Header from './components/Header.vue';
@@ -100,13 +101,390 @@ export default {
 }
 </script>
 
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+body {
+  line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+  display:block;
+}
+
+nav ul {
+  list-style:none;
+}
+
+blockquote, q {
+  quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content:'';
+  content:none;
+}
+
+a {
+  margin:0;
+  padding:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color:#ff9;
+  color:#000;
+  text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color:#ff9;
+  color:#000;
+  font-style:italic;
+  font-weight:bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom:1px dotted;
+  cursor:help;
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display:block;
+  height:1px;
+  border:0;
+  border-top:1px solid #cccccc;
+  margin:1em 0;
+  padding:0;
+}
+
+input, select {
+  vertical-align:middle;
+}
+
+
+
+#firstview {
+  height: 100%;
+  background: url(./assets/img/eyecatch.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.catchcopy {
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  font-size: 60px;
+  font-style: italic;
+  font-weight: bold;
+  color: #fff;
+  line-height: 1;
+}
+
+/*------------------------*/
+/*         news           */
+/*------------------------*/
+.news {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+}
+.news-content {
+  background: #fff;
+  width: 80%;
+  height: 70px;
+}
+
+.news_date {
+  padding-left: 5px;
+}
+
+.news_title {
+  padding: 0 15px;
+}
+.news-icon {
+  background: #000;
+  width: 20%;
+  height: 70px;
+  line-height: 70px;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #fff;
+}
+
+/*------------------------*/
+/*         mission        */
+/*------------------------*/
+.mission {
+  position: relative;
+  background: #000;
+  margin-bottom: 10%;
+  z-index: 999;
+}
+
+.mission-content {
+  padding: 10% 0 10% 20%;
+  box-sizing: border-box;
+  width: 70%;
+}
+
+.mission_title,
+.mission_text {
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.mission_title {
+  font-size: 30px;
+}
+
+.mission-img {
+  width: 40%;
+  position: absolute;
+  bottom: -10%;
+  right: 5%;
+  z-index: -999;
+}
+
+/*------------------------*/
+/*         service        */
+/*------------------------*/
+.service {
+  background: #e5e5e5;
+  margin-bottom: 10%;
+}
+
+.service-title {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.service-content {
+  position: relative;
+  padding-bottom: 15%;
+}
+
+.service-img {
+  width: 50%;
+  margin-left: 50%;
+}
+
+.service-img_second {
+  margin: 0 50% 0 0;
+}
+
+.service-content_inner {
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  background: #fff;
+  width: 40%;
+  padding: 5% 5%;
+  box-sizing: border-box;
+}
+
+.service-content_inner-second {
+  left: 40%;
+}
+
+.service-btn {
+  border: 1px solid #000;
+  margin: 0 0 0 auto;
+}
+
+/*------------------------*/
+/*        recruit         */
+/*------------------------*/
+.company {
+  margin-bottom: 10%;
+}
+
+.recruit-company_size {
+  width: 48%;
+  height: 300px;
+  position: relative;
+}
+
+.company-img {
+  background: url(./assets/img/company.jpg) center/cover no-repeat;
+}
+
+.recruit-img {
+  background: url(./assets/img/recruit.jpg) center/cover no-repeat;
+}
+
+.company-title {
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.company-title span {
+  color: #fff;
+}
+
+/*------------------------*/
+/*        faq             */
+/*------------------------*/
+.faq {
+  width: 70%;
+  background: #000;
+  margin: 0 auto 10%;
+  padding: 50px;
+}
+
+.faq-title,
+.faq-title-jp {
+  display: inline-block;
+  color: #fff;
+}
+
+.faq-title {
+  font-size: 40px;
+  width: 10%;
+}
+
+.faq-title-jp {
+  font-size: 20px;
+  width: 80%;
+  text-align: center;
+}
+
+/*------------------------*/
+/*        contact         */
+/*------------------------*/
+.contact {
+  background: url(./assets/img/contact-bg.jpg) center/cover no-repeat;
+  padding: 10%;
+}
+
+.contact-title,
+.contact-title span,
+.contact-subtitle,
+.contact-text {
+  color: #fff;
+  text-align: center;
+}
+
+.contact-title,
+.contact-subtitle,
+.contact-text {
+  margin-bottom: 40px;
+}
+
+.contact-btn {
+  margin: 0 auto;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.footer-bar {
+  height: 70px;
+  line-height: 70px;
+}
+
+.top-footer {
+  background: #000;
+  text-align: center;
+}
+
+.top-footer small {
+  text-align: center;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .header-nav {
+    display: none;
+  }
+  .catchcopy {
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+  }
+  .news {
+    width: 100%;
+  }
+  .mission-content {
+    padding: 10% 0;
+    margin: 0 auto;
+  }
+  .service-content_inner {
+    width: 60%;
+    left: 10%;
+  }
+  .service-img {
+    width: 70%;
+    margin-left: 30%;
+  }
+  .service-img_second {
+    margin: 0 30% 0 0;
+  }
+  .service-content_inner-second {
+    left: 30%;
+  }
+  .service-content {
+    margin: 0 auto;
+  }
+  .service-content_inner {
+    width: 90%;
+    position: inherit;
+    background: rgba(255, 255, 255, 0.8);
+    left: 5%;
+  }
+  .service-img {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .recruit-company_size {
+    width: 100%;
+  }
+  .faq-title {
+    font-size: 30px;
+  }
 }
 </style>

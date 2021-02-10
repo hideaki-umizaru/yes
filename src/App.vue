@@ -22,14 +22,14 @@
           <a href="" class="common-btn mission-btn">ミッション詳細</a>
         </div>
         <div class="mission-img">
-          <img src="img/mission-img.jpg" alt="" />
+          <img src="./assets/mission-img.jpg" alt="" />
         </div>
       </div>
       <div class="service">
         <h2 class="service-title section-title">service</h2>
         <div class="service-content">
           <div class="service-img">
-            <img src="img/service2.jpg" alt="" />
+            <img src="./assets/service2.jpg" alt="" />
           </div>
           <div class="service-content_inner">
             <h3 class="mgb-15">web制作事業</h3>
@@ -42,7 +42,7 @@
         </div>
         <div class="service-content">
           <div class="service-img service-img_second">
-            <img src="img/service1.jpg" alt="" />
+            <img src="./assets/service1.jpg" alt="" />
           </div>
           <div class="service-content_inner service-content_inner-second">
             <h3 class="mgb-15">web制作事業</h3>
@@ -202,7 +202,7 @@ input, select {
 
 #firstview {
   height: 100%;
-  background: url(.src/assets/img/eyecatch.jpg) no-repeat;
+  background: url(./assets/eyecatch.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -333,11 +333,15 @@ input, select {
 }
 
 .company-img {
-  background: url(.src/assets/img/company.jpg) center/cover no-repeat;
+  background: url(./assets/company.jpeg) no-repeat;
+   background-size: cover;
+   background-position: center;
 }
 
 .recruit-img {
-  background: url(.src/assets/img/recruit.jpg) center/cover no-repeat;
+  background: url(./assets/recruit.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .company-title {
@@ -379,7 +383,9 @@ input, select {
 }
 
 .contact {
-  background: url(.src/assets/img/contact-bg.jpg) center/cover no-repeat;
+  background: url(./assets/contact-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
   padding: 10%;
 }
 
@@ -471,4 +477,5 @@ input, select {
     font-size: 30px;
   }
 }
+
 </style>

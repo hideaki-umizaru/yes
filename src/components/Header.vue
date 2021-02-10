@@ -4,7 +4,7 @@
       <header id="top-header">
         <div class="flex">
           <h1 class="header-logo">estra inc.</h1>
-          <nav class="header-nav">
+          <nav class="header-nav" :class="{'open':isClass}">
             <ul>
               <li><a href="#">home</a></li>
               <li><a href="#">about</a></li>
@@ -20,29 +20,6 @@
       <span></span>
       <span></span>
     </div>
-    <nav class="menu-content" :class="{'open':isClass}">
-      <p class="menu-title">estra inc.</p>
-      <ul class="menu-content_inner">
-        <li>
-          <a href="#">home</a>
-        </li>
-        <li>
-          <a href="#">about</a>
-        </li>
-        <li>
-          <a href="#">service</a>
-        </li>
-        <li>
-          <a href="#">works</a>
-        </li>
-        <li>
-          <a href="#">price</a>
-        </li>
-        <li>
-          <a href="#">contact</a>
-        </li>
-      </ul>
-    </nav>
     </header>
   </div>
   </div>
@@ -86,8 +63,15 @@ export default {
 
 .header-nav a {
   color: #fff;
+  text-decoration: none;
 }
 
+.flex {
+  display: flex;
+  justify-content: space-between;
+  line-height: 70px;
+
+}
 
 @media screen and (max-width: 768px) {
   .header-nav {

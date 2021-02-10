@@ -202,7 +202,7 @@ input, select {
 
 #firstview {
   height: 100%;
-  background: url(./assets/img/eyecatch.jpg) no-repeat;
+  background: url(.src/assets/img/eyecatch.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -219,9 +219,7 @@ input, select {
   line-height: 1;
 }
 
-/*------------------------*/
-/*         news           */
-/*------------------------*/
+
 .news {
   position: absolute;
   bottom: 0;
@@ -250,9 +248,6 @@ input, select {
   color: #fff;
 }
 
-/*------------------------*/
-/*         mission        */
-/*------------------------*/
 .mission {
   position: relative;
   background: #000;
@@ -284,9 +279,6 @@ input, select {
   z-index: -999;
 }
 
-/*------------------------*/
-/*         service        */
-/*------------------------*/
 .service {
   background: #e5e5e5;
   margin-bottom: 10%;
@@ -330,9 +322,6 @@ input, select {
   margin: 0 0 0 auto;
 }
 
-/*------------------------*/
-/*        recruit         */
-/*------------------------*/
 .company {
   margin-bottom: 10%;
 }
@@ -344,11 +333,11 @@ input, select {
 }
 
 .company-img {
-  background: url(./assets/img/company.jpg) center/cover no-repeat;
+  background: url(.src/assets/img/company.jpg) center/cover no-repeat;
 }
 
 .recruit-img {
-  background: url(./assets/img/recruit.jpg) center/cover no-repeat;
+  background: url(.src/assets/img/recruit.jpg) center/cover no-repeat;
 }
 
 .company-title {
@@ -364,9 +353,7 @@ input, select {
   color: #fff;
 }
 
-/*------------------------*/
-/*        faq             */
-/*------------------------*/
+
 .faq {
   width: 70%;
   background: #000;
@@ -391,11 +378,8 @@ input, select {
   text-align: center;
 }
 
-/*------------------------*/
-/*        contact         */
-/*------------------------*/
 .contact {
-  background: url(./assets/img/contact-bg.jpg) center/cover no-repeat;
+  background: url(.src/assets/img/contact-bg.jpg) center/cover no-repeat;
   padding: 10%;
 }
 

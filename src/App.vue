@@ -375,7 +375,6 @@ body {
   background: url(./assets/img/company.jpeg) no-repeat;
    background-size: cover;
    background-position: center;
-   margin-right: 40px;
 }
 
 .recruit-img {
@@ -477,11 +476,7 @@ font-size: 40px;
     width: 60%;
     left: 10%;
   }
-  .service-img {
-    width: 70%;
-    margin-left: 30%;
-  }
-  .service-img_second {
+  .service-img_second img{
     margin: 0 30% 0 0;
   }
   .service-content_inner-second {
@@ -496,7 +491,7 @@ font-size: 40px;
     background: rgba(255, 255, 255, 0.8);
     left: 5%;
   }
-  .service-img {
+  .service-img img{
     width: 90%;
     margin: 0 auto;
   }

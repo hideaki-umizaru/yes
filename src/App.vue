@@ -1,16 +1,6 @@
 <template>
   <div id="app">
         <Header></Header>
-    <p class="catchcopy">機械ではできない仕事を</p>
-      <div class="news flex">
-        <div class="news-content">
-          <p class="news_date">2019/01/01</p>
-          <p class="news_title">
-            ニュースタイトルがここには入ります。3月の決算報告書
-          </p>
-        </div>
-        <div class="news-icon">news</div>
-      </div>
       <div class="mission">
         <div class="mission-content">
           <h2 class="mission_title">
@@ -22,14 +12,14 @@
           <a href="" class="common-btn mission-btn">ミッション詳細</a>
         </div>
         <div class="mission-img">
-          <img src="./assets/mission-img.jpg" alt="" />
+          <img src="./assets/img/mission-img.jpg" alt="" />
         </div>
       </div>
       <div class="service">
         <h2 class="service-title section-title">service</h2>
         <div class="service-content">
           <div class="service-img">
-            <img src="./assets/service2.jpg" alt="" />
+            <img src="./assets/img/service2.jpg" alt="" />
           </div>
           <div class="service-content_inner">
             <h3 class="mgb-15">web制作事業</h3>
@@ -42,7 +32,7 @@
         </div>
         <div class="service-content">
           <div class="service-img service-img_second">
-            <img src="./assets/service1.jpg" alt="" />
+            <img src="./assets/img/service1.jpg" alt="" />
           </div>
           <div class="service-content_inner service-content_inner-second">
             <h3 class="mgb-15">web制作事業</h3>
@@ -198,15 +188,10 @@ input, select {
   vertical-align:middle;
 }
 
-
-
-#firstview {
-  height: 100%;
-  background: url(./assets/eyecatch.jpg) no-repeat;
-  background-size: cover;
-  background-position: center;
-  position: relative;
+#app {
+  width: 100%;
 }
+
 
 .catchcopy {
   position: absolute;
@@ -270,8 +255,19 @@ input, select {
 .mission_title {
   font-size: 30px;
 }
+.common-btn {
+    display: block;
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    padding: 0 20px;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+}
 
-.mission-img {
+.mission-img img{
   width: 40%;
   position: absolute;
   bottom: -10%;
@@ -294,12 +290,12 @@ input, select {
   padding-bottom: 15%;
 }
 
-.service-img {
+.service-img img{
   width: 50%;
   margin-left: 50%;
 }
 
-.service-img_second {
+.service-img_second  img{
   margin: 0 50% 0 0;
 }
 
@@ -333,13 +329,13 @@ input, select {
 }
 
 .company-img {
-  background: url(./assets/company.jpeg) no-repeat;
+  background: url(./assets/img/company.jpeg) no-repeat;
    background-size: cover;
    background-position: center;
 }
 
 .recruit-img {
-  background: url(./assets/recruit.jpg) no-repeat;
+  background: url(./assets/img/recruit.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -383,7 +379,7 @@ input, select {
 }
 
 .contact {
-  background: url(./assets/contact-bg.jpg) no-repeat;
+  background: url(./assets/img/contact-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   padding: 10%;

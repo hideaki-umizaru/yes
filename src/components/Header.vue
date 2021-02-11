@@ -19,8 +19,18 @@
       <span></span>
       <span></span>
       <span></span>
-    </div>
+       </div>
     </header>
+     <p class="catchcopy">機械ではできない仕事を</p>
+      <div class="news flex">
+        <div class="news-content">
+          <p class="news_date">2019/01/01</p>
+          <p class="news_title">
+            ニュースタイトルがここには入ります。3月の決算報告書
+          </p>
+        </div>
+        <div class="news-icon">news</div>
+      </div>
   </div>
   </div>
 </template>
@@ -71,6 +81,14 @@ export default {
   justify-content: space-between;
   line-height: 70px;
 
+}
+
+#firstview {
+  height: 700px;
+  background: url(../assets/img/eyecatch.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
 
 @media screen and (max-width: 768px) {

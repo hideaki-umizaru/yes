@@ -188,9 +188,59 @@ input, select {
   vertical-align:middle;
 }
 
-#app {
-  width: 100%;
+html {
+  height: 100%;
 }
+
+a {
+  color: #333333;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+body {
+  color: #333333;
+  height: 100%;
+}
+
+.mgb-15 {
+  margin-bottom: 15px;
+}
+
+
+
+.common-btn {
+    display: block;
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    padding: 0 20px;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+}
+.section-title {
+  font-size: 40px;
+  line-height: 1;
+}
+
+.section-title span {
+  font-size: 20px;
+}
+
 
 
 .catchcopy {
@@ -255,19 +305,8 @@ input, select {
 .mission_title {
   font-size: 30px;
 }
-.common-btn {
-    display: block;
-    width: 130px;
-    height: 40px;
-    line-height: 40px;
-    background: #fff;
-    padding: 0 20px;
-    color: #000;
-    text-align: center;
-    text-decoration: none;
-}
 
-.mission-img img{
+.mission-img {
   width: 40%;
   position: absolute;
   bottom: -10%;
@@ -328,10 +367,15 @@ input, select {
   position: relative;
 }
 
+.recruit-company {
+  display: flex;
+}
+
 .company-img {
   background: url(./assets/img/company.jpeg) no-repeat;
    background-size: cover;
    background-position: center;
+   margin-right: 40px;
 }
 
 .recruit-img {
@@ -399,6 +443,10 @@ input, select {
   margin-bottom: 40px;
 }
 
+.sectiontitle {
+font-size: 40px;
+}
+
 .contact-btn {
   margin: 0 auto;
   background: none;
@@ -406,20 +454,6 @@ input, select {
   color: #fff;
 }
 
-.footer-bar {
-  height: 70px;
-  line-height: 70px;
-}
-
-.top-footer {
-  background: #000;
-  text-align: center;
-}
-
-.top-footer small {
-  text-align: center;
-  color: #fff;
-}
 
 @media screen and (max-width: 768px) {
   .header-nav {
